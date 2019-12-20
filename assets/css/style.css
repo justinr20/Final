@@ -1,0 +1,243 @@
+
+
+/* presets */
+.container{
+    text-align:center;
+    max-width:800px;
+    margin:0px auto;
+}
+
+.container:after{
+    content:'';
+    display:block;
+    clear:both;
+}
+
+@keyframes btnhover{
+    0%{
+        background:#191970;
+        border-radius:0px;
+    }
+    100%{
+        background:#333;
+        border-radius:10px;
+    }
+}
+
+.btn{
+	display:inline-block;
+	background:#191970;
+	padding:5px 10px;
+	text-decoration: none;
+	color:#fff;
+	text-transform: uppercase;
+}
+
+.btn:hover{
+	animation:btnhover 1s linear 1;
+	background:#333;
+	border-radius:10px;
+}
+
+#hero{
+	background: url(../img/lights.jpg);
+      
+        
+	background-size: cover;
+	background-position: center center;
+}
+.overlay{
+
+}
+
+#herocontent{
+	text-align:center;
+	padding:40px;
+}
+
+#herocontent p{
+	margin:20px auto;
+	max-width:800px;
+}
+
+#herocontent h1, #herocontent p{
+	color:#fff;
+}
+
+/* about */
+
+#about{
+	padding:40px;
+}
+
+/* featured */
+
+.product{
+	width:33.333333%;
+	float:left;
+}
+
+
+
+@keyframes fadein{
+	0%{
+		opacity:0;
+	}
+	100%{
+		opacity:100%;
+	}
+}
+
+
+
+#cta{
+	padding:40px;
+	background:#333;
+}
+
+#cta h2, #cta p{
+	color:#fff;
+}
+
+footer{
+	padding:40px;
+}
+
+footer a{
+	text-decoration: none;
+	display:inline-block;
+	padding:10px;
+	width:45px;
+	border:1px solid #c03;
+	border-radius:50%;
+	margin-top:10px;
+}
+
+footer a:nth-child(2){
+/*
+	margin-left:5px;
+	margin-right:5px;
+*/
+	margin:10px 5px 0px 5px;
+	
+}
+
+
+
+footer .fa{
+	color:#c03;
+	font-size:25px;
+}
+
+footer a:hover{
+	background:#c03;
+}
+
+footer a:hover .fa{
+	color:#fff;
+}
+
+/* The side navigation menu */
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #696969;
+  position: fixed;
+  height: 28%;
+  overflow: auto;
+  
+}
+
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+
+
+.sidebar a.active {
+  background-color: #696969;
+  color: white;
+}
+
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1200px;
+}
+
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+
+/* The navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #696969;
+  position: fixed; 
+  top: 0; 
+  width: 100%; 
+}
+
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+.form{
+    border:5px solid #666666
+}
+
+.gallery {
+    margin: 10px 50px;
+}
+
+.gallery img{
+    width: 200px;
+    height: 200px;
+    padding: 5px;
+    transition: 1s;
+}
+
+.gallery img:hover {
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
+
